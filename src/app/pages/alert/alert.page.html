@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ this.title || 'No perro' }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div>
+    <ion-button color="primary"
+                expand="block"
+                (click)="presentAlert()">
+      Simple Alert
+    </ion-button>
+  </div>
+  <div>
+    <ion-button color="primary"
+                expand="block"
+                (click)="presentAlertMultipleButtons()">
+      Multiple Buttons Alert
+    </ion-button>
+  </div>
+  <div>
+    <ion-button color="primary"
+                expand="block"
+                (click)="presentAlertConfirm()">
+      Confirm Alert
+    </ion-button>
+  </div>
+  <div>
+    <ion-button color="primary"
+                expand="block"
+                (click)="presentAlertPrompt()">
+      Prompt Alert
+    </ion-button>
+  </div>
+  <div>
+    <ion-button color="primary"
+                expand="block"
+                (click)="presentAlertRadio()">
+      Radio Alert
+    </ion-button>
+  </div>
+  <div>
+    <ion-button color="primary"
+                expand="block"
+                (click)="presentAlertCheckbox()">
+      Checkbox Alert
+    </ion-button>
+  </div>
+</ion-content>
